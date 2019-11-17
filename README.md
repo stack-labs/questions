@@ -3,6 +3,7 @@
 本项目用于维护相关Micro的问题，定期存档。
 
 + go-micro 支持websocket吗?
+
 答：支持，参看：[教程中的Web示例](https://github.com/micro-in-cn/tutorials/tree/master/examples/basic-practices/micro-api/web)
 
 + go-micro 是否已经支持websocket的会话管理?教程中没看到.
