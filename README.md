@@ -23,3 +23,7 @@
 + go-micro 开发不用设置go path了吧?
 
 答：go-micro完全支持go mod,不再依赖go path,关于go path的更多说明，参阅golang官方的声明。
+
++ 使用proxy 的场景示例吗？
+
+答：参看：[使用micro-proxy](https://github.com/micro-in-cn/tutorials/blob/master/examples/senior-practices/micro-proxy/READEME.md)
