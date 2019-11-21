@@ -1,6 +1,7 @@
 # Micro问题集(FAQ)
 
-本项目用于维护相关Micro的问题，定期存档。
+本项目用于维护相关Micro的问题，定期存档。**[----我们需要一位Question Leader](https://github.com/micro-in-cn/questions/issues/19)**
+
 
 + 为什么运行 `go run main.go` 程序会直接退出，但不报错，并在控制台显示出命令行的各种参数提出?
 
