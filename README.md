@@ -9,9 +9,7 @@
 
 + 运行Micro，传递参数时是否有顺序?
 
-答: 是。Micro有子命令，比如API、Network,所以确保不要将子命令的参数在上一级传递或者传递.
-
-答：确保你程序运行需要的默认参数，都正确指定,比如registry、broker等
+答: 是。Micro有子命令，比如API、Network,所以确保不要将子命令的参数在上一级传递.
 
 + go-micro 支持websocket吗?
 
