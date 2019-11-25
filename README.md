@@ -3,6 +3,10 @@
 本项目用于维护相关Micro的问题，定期存档。**[----我们需要一位Question Leader](https://github.com/micro-in-cn/questions/issues/19)**
 
 
++ 为什么consul现在用不了? 一运行服务就出错.
+
+答：go-micro 当前默认使用etcd，而不在默认使用consul进行服务注册发现，如果想继续使用consul引入相应的go-plugins.
+
 + 为什么运行 `go run main.go` 程序会直接退出，但不报错，并在控制台显示出命令行的各种参数提出?
 
 答：确保你程序运行需要的默认参数，都正确指定,比如registry、broker等
