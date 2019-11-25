@@ -5,7 +5,7 @@
 
 + 为什么consul现在用不了? 一运行服务就出错.
 
-答：go-micro 当前默认使用etcd，而不在默认使用consul进行服务注册发现，如果想继续使用consul引入相应的go-plugins.
+答：go-micro 当前默认集成的注册中心是etcd，如果想继续使用consul需引入插件[go-plugins](https://github.com/micro/go-plugins/tree/master/registry/consul)。迁移计划公告见：[deprecating-consul](https://micro.mu/blog/2019/10/04/deprecating-consul.html)
 
 + 为什么运行 `go run main.go` 程序会直接退出，但不报错，并在控制台显示出命令行的各种参数提出?
 
