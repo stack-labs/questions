@@ -1,4 +1,4 @@
-#go mod的说明
+# go mod instruction
 
 注意China go mod加速问题：[官方讨论](https://github.com/golang/go/issues/31755)
 
