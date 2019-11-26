@@ -11,7 +11,7 @@
 
 ## 工作模式
 
-+ 所有成员直接共同工作于Fork仓库[Micro-Community-Questions](https://github.com/micro-community/questions)，然后定期或者经常合并回主仓库[Micro questions](https://github.com/micro-in-cn/questions).
++ 所有成员直接共同工作于Fork仓库，定期或者经常合并回主仓库.
   
   
   ## 补充 
