@@ -1,7 +1,7 @@
   
 # 相关说明
 
-+ Micro-Questions Teams will Lead By [@SkyWingZhang](https://github.com/SkyWingZhang).
++ Micro-Questions Teams Lead By [@SkyWingZhang](https://github.com/SkyWingZhang).
 
 + 该仓库的目标是：存放Community成员们整理的各类FAQ问题项目，以帮助大家了解Micro。
   
