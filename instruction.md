@@ -9,7 +9,9 @@
 
 + [Micro-Community-Questions](https://github.com/micro-community/questions) 仓库会被定期合回 Micro China官方问题仓库[Micro questions](https://github.com/micro-in-cn/questions).
 
-+ 工作模式是：所以成员直接共同工作于Fork仓库[Micro-Community-Questions](https://github.com/micro-community/questions)，然后定时合并回主仓库[Micro questions](https://github.com/micro-in-cn/questions).
+## 工作模式
+
++所有成员直接共同工作于Fork仓库[Micro-Community-Questions](https://github.com/micro-community/questions)，然后定期或者经常合并回主仓库[Micro questions](https://github.com/micro-in-cn/questions).
   
   
   ## 补充 
