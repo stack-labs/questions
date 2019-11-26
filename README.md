@@ -1,7 +1,11 @@
 # Micro问题集(FAQ)
 
-本项目用于维护相关Micro的问题，定期存档。**[----我们需要一位Question Leader](https://github.com/micro-in-cn/questions/issues/19)**
+本项目用于维护相关Micro的问题，定期存档。**[更多说明](https://github.com/micro-in-cn/questions/blob/master/instruction.md)**
 
+
++ 为什么consul现在用不了? 一运行服务就出错.
+
+答：go-micro 当前默认集成的注册中心是etcd，如果想继续使用consul需引入插件[go-plugins](https://github.com/micro/go-plugins/tree/master/registry/consul)。迁移计划公告见：[deprecating-consul](https://micro.mu/blog/2019/10/04/deprecating-consul.html)
 
 + 为什么运行 `go run main.go` 程序会直接退出，但不报错，并在控制台显示出命令行的各种参数提出?
 
