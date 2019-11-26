@@ -1,6 +1,6 @@
 # Micro问题集(FAQ)
 
-本项目用于维护相关Micro的问题，定期存档。**[----我们需要一位Question Leader](https://github.com/micro-in-cn/questions/issues/19)**
+本项目用于维护相关Micro的问题，定期存档。**[更多说明](https://github.com/micro-in-cn/questions/blob/master/instruction.md)**
 
 
 + 为什么consul现在用不了? 一运行服务就出错.
