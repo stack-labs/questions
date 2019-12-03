@@ -2,6 +2,9 @@
 
 本项目用于维护相关Micro的问题，定期存档。**[更多说明](https://github.com/micro-in-cn/questions/blob/master/instruction.md)**
 
+**基本概念相关的问题看这里[basic concept](basic-concept.md)**
+
+## 问题列表
 
 + 为什么consul现在用不了? 一运行服务就出错.
 
@@ -30,3 +33,13 @@
 + 使用proxy 的场景示例吗？
 
 答：参看：[使用micro-proxy](https://github.com/micro-in-cn/tutorials/blob/master/examples/senior-practices/micro-proxy/READEME.md)
+
++ 如何理解go-mciro的retry和超时机制。
+
+答：不管你retry设置多少次，其中的backoff只是再次发起请求的等待时间，跟你参数设置的超时没关系，参数传入的timeout到了，就会退出，具体参看源码。
+
++ go-micro的broker是有状态的码?
+
+答：除默认的http broker外，凡以tcp建立会话的broker都是有状态的。
+
+
