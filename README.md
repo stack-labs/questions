@@ -4,6 +4,8 @@
 
 **基本概念相关的问题看这里[basic concept](basic-concept.md)**
 
+## 问题列表
+
 + 为什么consul现在用不了? 一运行服务就出错.
 
 答：go-micro 当前默认集成的注册中心是etcd，如果想继续使用consul需引入插件[go-plugins](https://github.com/micro/go-plugins/tree/master/registry/consul)。迁移计划公告见：[deprecating-consul](https://micro.mu/blog/2019/10/04/deprecating-consul.html)
