@@ -2,6 +2,7 @@
 
 本项目用于维护相关Micro的问题，定期存档。**[更多说明](https://github.com/micro-in-cn/questions/blob/master/instruction.md)**
 
+## 基本概念相关的问题看这里[basic concept](basic-concept.md)
 
 + 为什么consul现在用不了? 一运行服务就出错.
 
