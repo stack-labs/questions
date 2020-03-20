@@ -2,9 +2,15 @@
 
 本项目用于维护相关Micro的问题，定期存档。**[更多说明](https://github.com/micro-in-cn/questions/blob/master/instruction.md)**
 
-**基本概念相关的问题看这里[basic concept](basic-concept.md)**
+**基本概念相关的问题看这里[basic concept](./basic-concept.md)**
+
+**一些高级概念相关的问题，看这里[senior concept](./reflection.md)**
 
 ## 问题列表
+
++ 我想用V2版本，那么从Go-Micro由V1升级的V2指导，有吗？
+
+答，有！ [详情看这里](./v1-upgrade-to-v2.md).
 
 + 为什么consul现在用不了? 一运行服务就出错.
 
@@ -41,3 +47,9 @@
 + go-micro的broker是有状态的码?
 
 答：除默认的http broker外，凡以tcp建立会话的broker都是有状态的。
+
++ etcd 与 grpc 版本存在不兼容的问题嘛?
+
+答：etcd v3版本和 目前grpc v1.27.0 和 v1.28.0 存在不兼容的问题,[详情看这里](./etcd-incompatible-with-grpc.md)
+
++
