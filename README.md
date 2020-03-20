@@ -6,6 +6,10 @@
 
 ## 问题列表
 
++ 我想用V2版本，那么从Go-Micro由V1升级的V2指导，有吗？
+
+答，有！ [详情看这里](./v1-upgrade-to-v2.md).
+
 + 为什么consul现在用不了? 一运行服务就出错.
 
 答：go-micro 当前默认集成的注册中心是etcd，如果想继续使用consul需引入插件[go-plugins](https://github.com/micro/go-plugins/tree/master/registry/consul)。迁移计划公告见：[deprecating-consul](https://micro.mu/blog/2019/10/04/deprecating-consul.html)
@@ -41,3 +45,9 @@
 + go-micro的broker是有状态的码?
 
 答：除默认的http broker外，凡以tcp建立会话的broker都是有状态的。
+
++ etcd 与 grpc 版本存在不兼容的问题嘛?
+
+答：etcd v3版本和 目前grpc v1.27.0 和 v1.28.0 存在不兼容的问题,[详情看这里](./etcd-incompatible-with-grpc.md)
+
++
