@@ -32,7 +32,7 @@
 
 + 使用proxy 的场景示例吗？
 
-答：参看：[使用micro-proxy](https://github.com/micro-in-cn/tutorials/blob/master/examples/senior-practices/micro-proxy/READEME.md)
+答：参看：[使用micro-proxy](https://github.com/micro-in-cn/tutorials/blob/master/examples/senior-practices/micro-proxy/README.md)
 
 + 如何理解go-mciro的retry和超时机制。
 
@@ -41,5 +41,3 @@
 + go-micro的broker是有状态的码?
 
 答：除默认的http broker外，凡以tcp建立会话的broker都是有状态的。
-
-
