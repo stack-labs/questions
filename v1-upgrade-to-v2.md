@@ -77,7 +77,7 @@ protoc --proto_path=${GOPATH}/src:. --go_out=. --micro_out=Mgithub.com/micro/go-
 
 ### 更新代码
 
-我们以Action与Logger为例，调整被破坏的代码。
+我们开始调整被破坏的代码。
 
 本次更新函数签名不一致导致的变动都比较好改，比如Action，它的主要逻辑并没有变动，我们只需要把Action的函数签名对上即可：
 
@@ -109,6 +109,42 @@ Logger是V2中新增的接口，V1时只是一个简单的日志库，后面我�
 ~~"github.com/micro/go-micro/v2/util/log"~~ -> log "github.com/micro/go-micro/v2/logger"
 
 我们使用log保持与V1的包名一致，剩下的调整就比较简单了，这里不赘述。
+
+**GRPC**
+
+V2中GRPC的TLS配置使用不再使用框架提供的Secure函数，使用通用库的TLSConfig：crypto/tls/Config
+
+~~"github.com/micro/go-micro/transport"~~ -> grpcc "github.com/micro/go-micro/v2/client/grpc"
+
+// v1
+```go
+    import (
+        "github.com/micro/go-micro/client"
+        "github.com/micro/go-micro/transport"
+    )
+	// v1
+	client.DefaultClient.Init(
+		client.Transport(
+			transport.NewTransport(transport.Secure(true)),
+		),
+	)
+```
+
+// v2
+```go
+    import (
+        "crypto/tls"
+
+        "github.com/micro/go-micro/v2/client"
+        grpcc "github.com/micro/go-micro/v2/client/grpc"
+    )
+	tlsCfg := &tls.Config{
+		InsecureSkipVerify: true,
+	}
+	client.DefaultClient.Init(
+		grpcc.AuthTLS(tlsCfg),
+	)
+```
 
 ## Consul方案
 
