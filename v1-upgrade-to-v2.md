@@ -70,7 +70,7 @@ go get github.com/micro/protoc-gen-micro/v2
 ## 普通rpc.proto
 $ protoc --proto_path=$GOPATH/src:. --micro_out=. --go_out=. 接口文件.proto
 ## 引用了go-micro/api的proto
-protoc --proto_path=${GOPATH}/src:. --go_out=. --micro_out=Mgithub.com/micro/go-micro/api/proto/api.proto=${GOPATH}/src/github.com/micro/go-micro/v2/api/proto:. 接口文件/api.proto
+protoc --proto_path=${GOPATH}/src:. --go_out=. --micro_out=Mgithub.com/micro/go-micro/api/proto/api.proto=github.com/micro/go-micro/v2/api/proto:. 接口文件/api.proto
 ```
 
 对于api类型的proto，也就是包含`import "github.com/micro/go-micro/api/proto/api.proto";`的接口文件需要使用**M**选项来修改api.proto的位置，因为protoc目前对于go mod没有支持。
