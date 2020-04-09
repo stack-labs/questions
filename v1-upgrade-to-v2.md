@@ -150,6 +150,8 @@ V2中GRPC的TLS配置使用不再使用框架提供的Secure函数，使用通�
 
 CLI V2接口改为使用指针传参，且EnvVar改为数组
 
+~~"github.com/micro/cli"~~ -> "github.com/micro/cli/v2"
+
 v1:
 ```go
     command := cli.Command{
