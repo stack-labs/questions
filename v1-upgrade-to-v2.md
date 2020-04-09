@@ -146,6 +146,34 @@ V2中GRPC的TLS配置使用不再使用框架提供的Secure函数，使用通�
 	)
 ```
 
+**CLI**
+
+CLI V2接口改为使用指针传参，且EnvVar改为数组
+
+v1:
+```go
+    command := cli.Command{
+		// ...
+		Flags: []cli.Flag{
+			&cli.StringFlag{
+				Name:    "address",
+				Usage:   "Set the web UI address e.g 0.0.0.0:8082",
+				EnvVar: "MICRO_WEB_ADDRESS",
+			},
+```
+
+v2:
+```
+	command := cli.Command{
+		// ...
+		Flags: []cli.Flag{
+			&cli.StringFlag{
+				Name:    "address",
+				Usage:   "Set the web UI address e.g 0.0.0.0:8082",
+				EnvVars: []string{"MICRO_WEB_ADDRESS"},
+			},
+```
+
 ## Consul方案
 
 因为V1中包含有Consul注册组件，V2中替换成了ETCD，故使用Consul组件的用户需要手动引用go-plugins/registry/consul，如下：
