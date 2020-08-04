@@ -206,4 +206,6 @@ $ go build main.go plugins.go
 
 中国区讨论区是Micro官方成员创建，面向中国用户的问题讨论群，欢迎大家加入，积极讨论与反馈，推动Go-Micro在中国的发展。
 
-
+最近项目从v1迁移到v2 弄了一个自动替换v2，和重新生成proto的工具
+https://github.com/kjcx/microv1tov2
+代码地址
